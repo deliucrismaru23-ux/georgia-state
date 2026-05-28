@@ -7,7 +7,7 @@ const {
   Routes,
   SlashCommandBuilder,
   EmbedBuilder,
-  ButtonBuilder,
+ ButtonBuilder,
   ActionRowBuilder,
   ButtonStyle
 } = require('discord.js');
@@ -42,7 +42,7 @@ async function registerCommands() {
   try {
     console.log('Registering slash commands...');
 
-    // GLOBAL COMMANDS (USER INSTALL)
+    // GLOBAL COMMANDS
     await rest.put(
       Routes.applicationCommands(process.env.CLIENT_ID),
       { body: commands }
@@ -85,7 +85,7 @@ We are a realistic ER:LC roleplay community!
 ## ✅ What We Offer
 🚓 Active Staff  
 📅 Daily Roleplays  
-💻 Custom Uniforms/Liverys  
+💻 CAD / MDT  
 👮 Departments  
 🌎 Professional Community  
 🎉 Friendly Members  
@@ -129,7 +129,8 @@ We are a realistic ER:LC roleplay community!
 ━━━━━━━━━━━━━━━━━━
 
 ## ✅ Requirements
-👥 Minimum member count  
+👥 50+ Members = 1 Representative  
+👥 50- Members = 2 Representatives  
 💬 Active community  
 🚫 No toxic staff  
 📢 Must advertise our server  
